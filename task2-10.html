@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Styling Tables</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        table {
+            width: 500px;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+
+        table, th, td {
+            border: 1px solid darkgrey;
+        }
+
+        th {
+            background-color: palegoldenrod;
+        }
+
+        .fancy-table td {
+            text-align: center;
+            padding: 10px;
+        }
+
+        .fancy-table td:nth-child(1),
+        .fancy-table td:nth-child(3) {
+            color: white;
+        }
+
+        .fancy-table td:nth-child(1) {
+            background-color: darkslategrey;
+        }
+
+        .fancy-table td:nth-child(3) {
+            background-color: #F8F8F8;
+        }
+
+        .complex-table th,
+        .complex-table td {
+            text-align: left;
+            padding: 10px;
+        }
+
+        .complex-table th {
+            text-align: center;
+        }
+
+        .complex-table tbody tr:nth-child(odd) {
+            background-color: #FFFACD;
+        }
+
+        .complex-table tbody tr:nth-child(even) {
+            background-color: #FFFFFF;
+        }
+    </style>
+</head>
+<body>
+
+<h1>Turning the tables</h1>
+
+<h2>A Fancy Table</h2>
+<table class="fancy-table">
+    <tr>
+        <td>White</td>
+        <td>on</td>
+        <td>darkslategrey</td>
+    </tr>
+    <tr>
+        <td>Black</td>
+        <td>on</td>
+        <td>#F8F8F8</td>
+    </tr>
+    <tr>
+        <td>Black</td>
+        <td>on</td>
+        <td>White</td>
+    </tr>
+    <tr>
+        <td>Darkgrey</td>
+        <td>border</td>
+        <td>beneath</td>
+    </tr>
+    <tr>
+        <td>each</td>
+        <td>row</td>
+        <td>table 500px wide</td>
+    </tr>
+</table>
+
+<h2>A complex Table</h2>
+<table class="complex-table">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Value</th>
+            <th>Hex</th>
+            <th>RGB</th>
+            <th>HSL</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>red</td>
+            <td>#ff0000</td>
+            <td>255,0,0</td>
+            <td>0,100%,50%</td>
+        </tr>
+        <tr>
+            <td>green</td>
+            <td>#00ff00</td>
+            <td>0,255,0</td>
+            <td>120,100%,50%</td>
+        </tr>
+        <tr>
+            <td>blue</td>
+            <td>#0000ff</td>
+            <td>0,0,255</td>
+            <td>240,100%,50%</td>
+        </tr>
+        <tr>
+            <td>palegoldenrod</td>
+            <td>table header color</td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+    </tbody>
+</table>
+
+</body>
+</html>

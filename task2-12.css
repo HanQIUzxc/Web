@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css?family=Pacifico|Quicksand&display=swap');
+
+body {
+    font-family: 'Quicksand', sans-serif;
+    background: papayawhip;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    text-align: center;
+    background: darkorange;
+    padding: 20px 0;
+}
+
+header h1 {
+    font-family: 'Pacifico', cursive;
+    color: dimgrey;
+}
+
+header h2 {
+    color: darkgrey;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+    color: lightgrey;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    background-image: url('dots.png');
+    background-color: lightgrey;
+    background-blend-mode: overlay;
+}
+
+section {
+    width: 400px;
+    margin-right: 10px;
+}
+
+aside {
+    width: 200px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    text-align: left;
+    padding: 8px;
+}
+
+th {
+    background-color: dimgrey;
+    color: white;
+}
+
+td {
+    border-bottom: 1px solid darkgrey;
+}
+
+button {

@@ -1,17 +1,147 @@
-html_content_from_image = """
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Webpage with Images and Links</title>
+    <title>Listomania</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #F0F0F0;
+            margin: 0;
+            padding: 20px;
+        }
+
+        h1 {
+            color: #333333;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        ul, ol {
+            padding-left: 20px;
+        }
+
+        .horizontal-menu {
+            list-style-type: none;
+            padding: 0;
+            background-color: #333;
+            overflow: hidden;
+            margin: 0 0 30px 0;
+        }
+
+        .horizontal-menu li {
+            float: left;
+        }
+
+        .horizontal-menu li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        .horizontal-menu li a:hover {
+            background-color: #111;
+        }
+
+        .content-box {
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            margin-bottom: 30px;
+        }
+
+        .content-box li {
+            margin-bottom: 10px;
+        }
+
+        ol {
+            counter-reset: list-counter;
+        }
+
+        ol > li {
+            list-style-type: none;
+        }
+
+        ol > li:before {
+            content: counter(list-counter) ". ";
+            counter-increment: list-counter;
+        }
+
+        ul {
+            list-style: none; /* Remove default list style */
+        }
+
+        ul > li {
+            position: relative; /* For positioning the pseudo-element */
+        }
+
+        ul > li:before {
+            content: '•'; /* Unicode character for bullet */
+            position: absolute; /* Position it outside the content flow */
+            left: -20px; /* Adjust distance from the content */
+        }
+
+        /* Roman numerals for nested lists */
+        ul ul {
+            list-style-type: lower-roman;
+        }
+
+        .shadow-box {
+            background-color: #A9A9A9;
+            box-shadow: 5px 5px 5px #D3D3D3;
+            padding: 20px;
+            margin-bottom: 30px;
+        }
+    </style>
 </head>
 <body>
-    <h2><a href="https://google.com" target="_blank">This Level 2 heading has a link to https://google.com</a> that opens in a new tab</h2>
-    <img src="https://www.w3schools.com/html/pic_trulli.jpg" alt="Trulli" style="width:500px;height:333px;">
-    <p>The image above is from https://www.w3schools.com/html/pic_trulli.jpg and is scaled to 150px high.</p>
-    <hr>
-    <img src="http://example.example" alt="Nyan Cat" width="400" height="100" style="border:1px solid #000;">
-    <p>This image of a Nyan Cat from http://example.example is 400x100px but did not load properly. Luckily it has alternate text! It also has a link to <a href="http://nyan.cat" title="Nyan">http://nyan.cat</a> and a tooltip that says Nyan.</p>
+
+    <h1>Listomania</h1>
+
+    <ul class="horizontal-menu">
+        <li><a href="#home">A Horizontal</a></li>
+        <li><a href="#news">List Menu</a></li>
+        <li><a href="#contact">White on Darkgrey</a></li>
+        <li><a href="#about">Darkgrey with Lightgrey Shadow</a></li>
+    </ul>
+
+    <div class="content-box">
+        <ol>
+            <li>An numbered list</li>
+            <li>Containing
+                <ul>
+                    <li>A dotted list
+                        <ul>
+                            <li>A roman numeral list</li>
+                            <li>And some items</li>
+                            <li>Like this</li>
+                        </ul>
+                    </li>
+                    <li>And some items
+                        <ul>
+                            <li>Like this</li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li>And subsequent nested lists
+                <ul>
+                    <li>Like this
+                        <ul>
+                            <li>are also automatically styled the same</li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li>Like this</li>
+        </ol>
+    </div>
+
+    <div class="shadow-box">
+        Darkgrey with Lightgrey Shadow
+    </div>
+
 </body>
 </html>

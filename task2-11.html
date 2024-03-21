@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Layout Like a Lizard</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #e0ffff;
+            display: flex;
+            justify-content: center;
+        }
+
+        .container {
+            width: 600px;
+            margin-top: 50px;
+            background: #f0ffff;
+            border: 1px solid #b0e0e6;
+            padding: 20px;
+            box-shadow: 10px 10px 5px #b0e0e6;
+        }
+
+        .left-div,
+        .right-div {
+            width: 290px;
+            height: 400px;
+            margin: 10px;
+            float: left;
+            position: relative;
+            overflow: auto;
+            padding: 5px;
+            border: 1px solid #b0c4de;
+            background: #f0ffff;
+        }
+
+        .right-div {
+            float: right;
+        }
+
+        .overflow-box {
+            width: 1000px;
+            height: 100px;
+            position: absolute;
+            top: 100px;
+            left: 100px;
+            overflow: hidden;
+            border: 1px solid red;
+        }
+
+        h1 {
+            text-align: center;
+            color: #2f4f4f;
+        }
+
+        ul {
+            padding-left: 20px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Layout like a lizard</h1>
+    <div class="left-div">
+        This div is floated left
+        <br><br>
+        Any content that overflows the bottom of the div will scroll
+        <ul>
+            <li>A List</li>
+            <li>Containing</li>
+            <li>A</li>
+            <li>Number</li>
+            <li>Of</li>
+            <li>Items</li>
+            <li>That</li>
+            <li>Will</li>
+            <li>Overflow</li>
+        </ul>
+    </div>
+    <div class="right-div">
+        The red box is 1000px wide by 100px high, and positioned 100px each from the top and left of this box. Its overflow is hidden.
+        <div class="overflow-box"></div>
+        <br>
+        The total width of this page is 600px.
+        It is centered.
+        There is 10x of margin between the divs.
+        Both this and the left div are 400px tall.
+    </div>
+</div>
+
+</body>
+</html>

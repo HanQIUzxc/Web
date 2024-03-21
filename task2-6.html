@@ -1,40 +1,75 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>Paragraphs Page</title>
-<style>
-p + p {
-    margin-top: 1.5em;
-}
-</style>
+    <meta charset="UTF-8">
+    <title>Border Practice</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #ffffff;
+            margin: 0;
+            padding: 20px;
+        }
+
+        #content {
+            border: 1px solid darkgrey;
+            border-radius: 8px;
+            padding: 20px;
+        }
+
+        .red-border {
+            border: 1px solid red;
+        }
+
+        hr {
+            border: none;
+            height: 1px;
+            background-color: #CFDFE4;
+        }
+
+        .red-outline {
+            outline: 1px solid red;
+            outline-offset: -5px;
+        }
+
+        .border-red {
+            border: 1px solid red;
+        }
+
+        .border-blue {
+            border: 1px solid blue;
+        }
+
+        .border-top-red {
+            border-top: 1px solid red;
+            border-radius: 8px 8px 0 0;
+        }
+
+        .border-bottom-blue {
+            border-bottom: 1px solid blue;
+            border-radius: 0 0 8px 8px;
+        }
+    </style>
 </head>
 <body>
 
-<h1>This page is all about paragraphs!</h1>
-
-<p>Check out this paragraph;<br>
-it has a link to <a href="https://google.com">https://google.com</a>,<br>
-and it spans<br>
-more than 1 line</p>
-
-<hr>
-
-<p>Have you ever used preformatted text?<br>
-It allows you to make sweet ASCII drawings like this owl:</p>
-
-<pre>
-{o,o}
-./)_)
- ""
-</pre>
-
-</body>
-</html>
-
+<div id="content">
+    <h1>Check out my borders</h1>
+    <p>We've modified the content div to have a 1px darkgrey border with rounded corners of an 8px radius.</p>
+    <p>Other elements can have borders too, <span class="red-border">like this span with the class red-border</span>.</p>
+    <p>You can change the color of horizontal rules by changing the border color; all horizontal rules are now #CFDFE4.</p>
+    <hr>
+    <p>Alternately, <span class="red-outline">this span has a red outline (red-outline class)</span>.</p>
+    <p>That prevents it from messing with the line height.</p>
+    <hr>
+    <p>Notice how the borders double up here:</p>
+    <div class="border-red">This div has a red border</div>
+    <div class="border-blue">This div has a blue border</div>
+    <hr>
+    <p>Notice how this fixes the borders:</p>
+    <div class="border-top-red">This div has a red border, except on the bottom, and 8px round top corners</div>
+    <div class="border-bottom-blue">This div has a blue border, and 8px round bottom corners</div>
+</div>
 
 </body>
 </html>
-
-</body>
-</html>
-

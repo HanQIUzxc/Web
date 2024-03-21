@@ -1,32 +1,83 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Formatted Text Example</title>
-<style>
-    .smaller-text { font-size: smaller; }
-    .green-text { color: green; }
-    .highlight { background-color: orange; }
-</style>
+    <meta charset="UTF-8">
+    <title>Font and Icons</title>
+    <link href="https://fonts.googleapis.com/css?family=Raleway:400,400i,700|Noto+Serif" rel="stylesheet">
+    <link href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Noto Serif', serif;
+            color: #333;
+            padding: 20px;
+            background: #fff;
+        }
+
+        h1, h2 {
+            font-family: 'Raleway', sans-serif;
+        }
+
+        h2 {
+            font-weight: 700; /* Raleway Bold */
+        }
+
+        h4 {
+            font-family: 'Raleway', sans-serif;
+            font-style: italic;
+            text-decoration: underline;
+            font-weight: 400; /* Raleway Normal */
+        }
+
+        blockquote {
+            font-family: 'Raleway', sans-serif;
+            color: dimgray;
+            line-height: 1.5;
+            word-spacing: 0.2em;
+            text-align: justify;
+            margin: 0;
+            padding: 0;
+        }
+
+        .social-icons i {
+            color: #BFCFD4;
+            font-size: 24px;
+            padding: 0 10px;
+        }
+        
+        /* Additional style for horizontal rule */
+        hr {
+            border: 0;
+            height: 1px;
+            background-color: #333;
+            margin: 20px 0;
+        }
+    </style>
 </head>
 <body>
 
-<h1 style="text-align: center;">This <span style="text-align: center;">centered</span> heading is <em>emphasised just here</em></h1>
+<h1>This new heading font is much more elegant</h1>
 
-<p>This is a <del>normal paragraph</del> <strong>paragraph of great importance!</strong></p>
+<p>We've updated the font for headings to a more elegant one from Google Fonts: Raleway. Note that for this to not break previous pages, sans-serif should still be present as a fallback.</p>
 
-<p>Another paragraph with some text that goes from <b>bold to <i>bold and italic to</b> just italic</i>.</p>
+<h2>L2 Heading font is also Raleway</h2>
+
+<p>Similarly, the default font is now Noto Serif from Google Fonts. Again, for this to not break previous pages, serif should still be present as a fallback.</p>
+
+<blockquote>
+    This multi-line quote from http://example.example also uses the Raleway font, and is dimgray with a line-height of 1.5, word-spacing of 0.2em, and justified.
+</blockquote>
+
+<h4>L4 Headings are Raleway, italic, underlined & a normal font-weight</h4>
+
+<p>Check out the sweet social media icons below, using the fontawesome icon set. They are colored #BFCFD4</p>
+
 <hr>
 
-<p>This third paragraph spans multiple lines,<br>
-And has a link to http://nyan.cat<a href="http://nyan.cat"><sup>HERE</sup></a><br>
-It also has some <small class="green-text">small, green text</small> and some <mark class="highlight">orange highlighted text</mark>.</p>
-
-<pre>Mathematical formulas work well as preformatted text, like this one:
-Log<sub>x</sub> = Log<sub>a</sub>x/Log<sub>a</sub>b
-</pre>
+<div class="social-icons">
+    <i class="fab fa-facebook-f"></i>
+    <i class="fab fa-twitter"></i>
+    <i class="fab fa-snapchat-ghost"></i>
+</div>
 
 </body>
 </html>

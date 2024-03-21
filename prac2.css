@@ -1,0 +1,38 @@
+/* styles.css */
+body {
+    font-family: 'Times New Roman', serif;
+}
+
+h1 {
+    font-family: Arial, sans-serif;
+    color: darkred;
+}
+
+a {
+    color: darkgreen;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.strike {
+    color: grey;
+    text-decoration: line-through;
+}
+
+.highlight {
+    color: darkblue;
+    background-color: pink;
+}
+
+h2 {
+    font-family: Arial, sans-serif;
+    text-align: left;
+}
+
+pre {
+    font-family: monospace;
+    font-size: 100%;
+}

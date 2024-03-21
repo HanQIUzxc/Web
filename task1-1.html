@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A Page About Lists and Things</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        ol {
+            list-style-type: none;
+            counter-reset: list-counter;
+        }
+        ol li {
+            counter-increment: list-counter;
+        }
+        ol li::before {
+            content: counter(list-counter) ". ";
+        }
+        .option-box {
+            border: 2px solid black;
+            padding: 10px;
+            margin: 10px 0;
+        }
+        h4 {
+            background-color: #0000FF;
+            color: #FFFFFF;
+            padding: 5px;
+        }
+        .default-option {
+            background-color: #D3D3D3;
+        }
+    </style>
+</head>
+<body>
+    <h1>A page about lists and things!</h1>
+    <hr>
+    <ol reversed start="8">
+        <li>The first item.</li>
+        <li>The second item.</li>
+        <li>The third item.</li>
+    </ol>
+    <p>The list above, counting 8,7,6, will only work on newer web browsers, for example, it won't work on Microsoft Edge older than version 79, or Mozilla Firefox older than version [WRITE NUMBER HERE].</p>
+    <hr>
+    <h4>Choose an option: (this is a L4 heading)</h4>
+    <div class="option-box">
+        <p class="default-option">This is the last option, but is shown as the default option. </p>
+        <p>The first option</p>
+        <p class="default-option">This is the last option, but is shown as the default option.</p>
+    </div>
+</body>
+</html>
