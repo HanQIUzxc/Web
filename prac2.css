@@ -1,0 +1,101 @@
+/* Reset some default browser styles */
+body {
+    font-size: 16px;
+    line-height: 1.5;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Set font families */
+  body,
+  p,
+  pre {
+    font-family: "Times New Roman", Times, serif;
+  }
+  
+  h1,
+  h2 {
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  /* Set link colors */
+  a {
+    color: darkgreen;
+    text-decoration: none;
+  }
+  
+  /* Add strike-through effect to strikethrough text */
+  s {
+    text-decoration: line-through;
+  }
+  
+  /* Highlighted text styles */
+  mark {
+    background-color: pink;
+    color: darkblue;
+  }
+  
+  /* Left align level 2 headings */
+  h2.left-aligned {
+    text-align: left;
+  }
+  
+  /* Monospace preformatted text */
+  pre.monospace {
+    font-family: monospace;
+  }/* Reset some default browser styles */
+body {
+    font-size: 16px;
+    line-height: 1.5;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Set font families */
+  body,
+  p,
+  pre {
+    font-family: "Times New Roman", Times, serif;
+  }
+  
+  h1,
+  h2 {
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  /* Set link colors */
+  a {
+    color: darkgreen;
+    text-decoration: none;
+  }
+  
+  /* Add strike-through effect to strikethrough text */
+  s {
+    text-decoration: line-through;
+  }
+  
+  /* Highlighted text styles */
+  mark {
+    background-color: pink;
+    color: darkblue;
+  }
+  
+  /* Left align level 2 headings */
+  h2.left-aligned {
+    text-align: left;
+  }
+  
+  /* Monospace preformatted text */
+  pre.monospace {
+    font-family: monospace;
+  }
+  
+  /* Dark blue transparent heading */
+  h3.transparent {
+    color: rgba(0, 0, 139, 0.8);
+  }
+  
+  /* Black semitransparent text */
+  .transparent-text {
+    color: rgba(0, 0, 0, 0.5);
+  }
