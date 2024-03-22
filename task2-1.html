@@ -2,67 +2,52 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Styled Page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Webpage Styling Example</title>
     <style>
         body {
-            font-family: sans-serif;
+            font-family: 'Times New Roman', serif;
         }
 
         h1 {
-            color: red;
-        }
-
-        a {
-            color: orange;
-            text-decoration: none;
-        }
-
-        a:hover {
-            text-decoration: underline;
-        }
-
-        p {
+            font-family: Arial, sans-serif;
             color: black;
         }
 
-        .struck-text {
-            color: grey;
+        h2 {
+            font-family: Arial, sans-serif;
+            color: black;
+            text-align: left;
+        }
+
+        a {
+            color: darkgreen;
+            text-decoration: none;
+        }
+
+        .strikethrough {
             text-decoration: line-through;
+            color: grey;
         }
 
         .highlight {
             background-color: pink;
-            color: dimgray;
-        }
-
-        h2 {
-            text-align: center;
+            color: darkblue;
         }
 
         pre {
             font-family: monospace;
-            font-size: 80%;
         }
     </style>
 </head>
 <body>
 
-<h1>A red heading</h1>
+<h1>L1 Headings are Sans Serif</h1>
+<p>All paragraph text is serif. Links, including this link to <a href="http://nyan.cat" target="_blank">nyan.cat</a>, are darkgreen, while this <span class="strikethrough">text which is struck out</span> is still grey.</p>
+<p class="highlight">Highlighted text is darkblue against pink.</p>
 
-<p>
-    All paragraph text is sans-serif. Links, including this link to <a href="http://nyan.cat">nyan.cat</a>, are orange, 
-    while this <span class="struck-text">text which is struck out</span> is grey.
-</p>
-
-<p class="highlight">
-    Highlighted text is dimgray against pink.
-</p>
-
-<h2>Level 2 Headings are centred</h2>
-
-<pre>
-Preformatted text uses the monospace font-family & is 80% normal size.
-</pre>
+<h2>Level 2 Headings are left-aligned, but also Sans Serif</h2>
+<pre>Preformatted text uses the monospace font-family, but is normal size.</pre>
 
 </body>
 </html>
