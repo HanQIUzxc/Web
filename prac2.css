@@ -1,0 +1,43 @@
+body {
+    font-family: serif;
+}
+
+h1, h2 {
+    font-family: sans-serif;
+}
+
+h1 {
+    text-align: center;
+    border-bottom: 2px solid black;
+}
+
+h2 {
+    text-align: left;
+}
+
+a {
+    color: darkgreen;
+}
+
+del {
+    color: grey;
+}
+
+mark {
+    background-color: pink;
+    color: darkblue;
+}
+
+pre {
+    font-family: monospace;
+}
+/* Additions for Task 2.3 */
+h3 {
+    color: rgba(0, 0, 139, 0.8); /* This is darkblue with an alpha value of 0.8 */
+}
+
+.transparent-text {
+    color: rgba(0, 0, 0, 0.5); /* Semi-transparent black (50% opacity) */
+}
+
+/* You might want to keep the rest of the styles as they were */
