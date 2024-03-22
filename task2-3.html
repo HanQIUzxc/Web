@@ -1,1 +1,43 @@
-<pre class="transparent-text">This preformatted text is semitransparent, because it belongs to a class named transparent-text, which uses an rgba value to make it black with 50% transparency.</pre>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Styled Page with Inline CSS</title>
+    <style>
+        /* Assuming darkblue is RGB (0, 0, 139) */
+        h1 {
+            color: black; /* Resetting previous styles if any */
+        }
+
+        h3 {
+            color: rgba(0, 0, 139, 0.8); /* darkblue with alpha value of 0.8 */
+        }
+
+        pre {
+            font-family: monospace;
+            font-size: 100%;
+            color: black; /* Resetting previous styles if any */
+        }
+
+        .transparent-text {
+            color: rgba(0, 0, 0, 0.5); /* black with 50% transparency */
+        }
+    </style>
+</head>
+<body>
+
+<h1>This is a L1 heading</h1>
+
+<h3>Heading 3 text is darkblue but has an alpha value of 0.8</h3>
+<p>To get the right value, you'll need to convert the color name to a RGB value and then add the alpha channel.</p>
+
+<pre class="transparent-text">
+This preformatted text is semitransparent, because it belongs to a class named transparent-text, which uses an rgba value to make it black with 50% transparency.
+</pre>
+
+<pre>
+This preformatted text is normal.
+</pre>
+
+</body>
+</html>
