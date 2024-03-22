@@ -10,26 +10,48 @@
         }
         ol {
             list-style-type: none;
-            counter-reset: list-counter;
+            counter-reset: list-counter 9; /* Start the counter one above the desired start */
         }
         ol li {
-            counter-increment: list-counter;
+            counter-increment: list-counter -1; /* Decrement the counter */
         }
         ol li::before {
             content: counter(list-counter) ". ";
         }
-        .option-box {
-            border: 2px solid black;
-            padding: 10px;
-            margin: 10px 0;
-        }
         h4 {
-            background-color: #0000FF;
-            color: #FFFFFF;
+            color: #000000; /* Change to non-deep color */
             padding: 5px;
         }
+        select {
+            width: 100%;
+            padding: 8px;
+            margin: 10px 0;
+            -webkit-appearance: none; /* Removes default chrome and safari style */
+            -moz-appearance: none; /* Removes default style Firefox */
+            appearance: none; /* Removes default style for IE */
+            background-color: #D3D3D3;
+            border: none; /* Optional: removes default border */
+            padding: 10px; /* Optional: adds some padding inside the drop down */
+            font-size: 16px; /* Optional: change font size */
+        }
+        /* Style for default option */
         .default-option {
             background-color: #D3D3D3;
+            border: none; /* Remove border from the default option */
+        }
+        /* Additional styles to simulate the dropdown appearance */
+        .select-style {
+            position: relative;
+            background-color: #D3D3D3;
+            border: none; /* Remove border from the dropdown */
+        }
+        .select-style:after {
+            content: '▼';
+            position: absolute;
+            top: 50%;
+            right: 10px;
+            transform: translateY(-50%);
+            pointer-events: none;
         }
     </style>
 </head>
@@ -43,11 +65,12 @@
     </ol>
     <p>The list above, counting 8,7,6, will only work on newer web browsers, for example, it won't work on Microsoft Edge older than version 79, or Mozilla Firefox older than version [WRITE NUMBER HERE].</p>
     <hr>
-    <h4>Choose an option: (this is a L4 heading)</h4>
-    <div class="option-box">
-        <p class="default-option">This is the last option, but is shown as the default option. </p>
-        <p>The first option</p>
-        <p class="default-option">This is the last option, but is shown as the default option.</p>
+    <h4>Choose an option:(this is a L4 heading)</h4>
+    <div class="option-box select-style">
+        <select name="options" id="option-select" class="default-option">
+            <option value="first-option">The first option</option>
+            <option value="last-option" selected>This is the last option, but is shown as the default option.</option>
+        </select>
     </div>
 </body>
 </html>
